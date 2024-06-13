@@ -11,6 +11,12 @@ public class InterplayObject : MonoBehaviour
     {
         outline = GetComponent<Outline>();
         outline.enabled = false;
+        OnAwake();
+    }
+
+    protected virtual void OnAwake()
+    {
+
     }
 
     public void SetItemOutline(bool isOutline)

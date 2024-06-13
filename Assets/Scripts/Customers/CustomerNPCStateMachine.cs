@@ -17,7 +17,7 @@ public class CustomerNPCStateMachine : MonoPooled
     private CharacterAnimationController characterAnimationController;
     public bool IsItemsGrab;
 
-    private const float happyTpAngryTimer = 100f;
+    private const float happyTpAngryTimer = 80f;
 
     private Wallet wallet;
 

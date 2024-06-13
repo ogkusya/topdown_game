@@ -35,14 +35,3 @@ public class Item : MonoPooled
         IsSelectable = true;
     }
 }
-
-public enum ItemType
-{
-    Sushi,
-    Peaches,
-    Cookies,
-    Clear,
-    Candy,
-    Meat,
-    RawMeat,
-}

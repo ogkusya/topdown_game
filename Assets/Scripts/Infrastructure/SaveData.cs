@@ -5,7 +5,7 @@ using System.Collections.Generic;
 [Serializable]
 public class SaveData
 {
-    public int Money = 600;
+    public int Money = 0;
     public bool IsFirstLaunch;
 
     public List<UpgradeHelper> UpgradeHelpers = new List<UpgradeHelper>()

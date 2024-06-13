@@ -22,9 +22,9 @@ public class CustomerUI
         faceImage.gameObject.SetActive(true);
         sliderImage.gameObject.SetActive(true);
         UpdateImage(true);
-        sliderImage.fillAmount = 0;
+        sliderImage.fillAmount = 1;
         sliderImage.DOKill();
-        sliderImage.DOFillAmount(1, timer).OnComplete(() =>
+        sliderImage.DOFillAmount(0, timer).OnComplete(() =>
         {
             sliderImage.gameObject.SetActive(false);
             UpdateImage(false);

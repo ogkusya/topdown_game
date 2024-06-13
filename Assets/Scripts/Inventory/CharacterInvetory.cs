@@ -30,6 +30,7 @@ public class CharacterInvetory : MonoBehaviour
     private PlayerHandItem currentHandItem;
 
     private List<Item> inventoryStorage = new List<Item>();
+    private const int maxCountItems = 8;
 
     public PlayerHandItem CurrentHandItem => currentHandItem;
     public List<Item> InventoryItem => inventoryStorage;
@@ -46,7 +47,11 @@ public class CharacterInvetory : MonoBehaviour
     {
         if (inputController.InInteractItem)
         {
-            AddNearestItem();
+            if (inventoryStorage.Count < maxCountItems)
+            {
+                AddNearestItem();
+            }
+            
             playerListener.LastObject?.IterplayObject(this);
             AddNearestHandItem();
         }
